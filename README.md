@@ -12,3 +12,6 @@ java -classpath build/libs/todo-gradle-1.0-SNAPSHOT.jar com.zkzong.gradle.todo.A
 
 ## 打包成war
 Tasks -> build -> war
+
+## Task
+自定义任务在Tasks -> other
