@@ -9,3 +9,6 @@ Tasks -> build -> jar
 ```
 java -classpath build/libs/todo-gradle-1.0-SNAPSHOT.jar com.zkzong.gradle.todo.App
 ```
+
+## 打包成war
+Tasks -> build -> war

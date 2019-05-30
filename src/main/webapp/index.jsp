@@ -1,7 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
   <head>
-    <meta charset="UTF-8">
     <title>todo</title>
     <script type="text/javascript">
       function addTodo() {
@@ -14,7 +13,7 @@
   <body>
     <h1>todo-web版</h1>
     <label>请输入待办事项名称：</label><input id="name" type="text" />
-    <button onabort="addTodo()">添加</button>
+    <button onclick="addTodo()">添加</button>
     <h3>待办事项列表：</h3>
     <div id="list"></div>
   </body>
