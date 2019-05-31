@@ -37,3 +37,10 @@ task makeWebDir() {
         paths.forEach(createDir);
     }
 }
+
+configurations.all {
+    resolutionStrategy {
+        failOnVersionConflict()
+        force 'org.slf4j:slf4j-api:1.7.22'
+    }
+}
