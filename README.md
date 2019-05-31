@@ -15,3 +15,14 @@ Tasks -> build -> war
 
 ## Task
 自定义任务在Tasks -> other
+
+## 冲突构建失败和指定版本
+```
+configurations.all {
+    resolutionStrategy {
+        failOnVersionConflict()
+        force 'org.slf4j:slf4j-api:1.7.22'
+    }
+}
+```
+
