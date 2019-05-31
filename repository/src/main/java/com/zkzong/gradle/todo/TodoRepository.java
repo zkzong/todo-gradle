@@ -16,4 +16,14 @@ public class TodoRepository {
         System.out.println("" + item);
         items.put(item.getName(), item);
     }
+
+    /**
+     * 查询待办事项
+     *
+     * @param name
+     * @return
+     */
+    public TodoItem query(String name) {
+        return items.get(name);
+    }
 }
