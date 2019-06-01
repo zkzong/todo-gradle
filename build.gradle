@@ -9,11 +9,11 @@ allprojects {
             myPublish(MavenPublication) {
                 from components.java
             }
-            repositories {
-                maven {
-                    name "myRepo"
-                    url ""
-                }
+        }
+        repositories {
+            maven {
+                name "myRepo"
+                url ""
             }
         }
     }
