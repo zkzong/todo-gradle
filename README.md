@@ -67,6 +67,19 @@ version = 1.0-SNAPSHOT
 
 ### 2. ext
 
+在build.gradle中定义：
+```groovy
+ext {
+    group = 'com.zkzong.gradle'
+    version = '1.0-SNAPSHOT'
+}
+```
+在allprojects中插入：
+```groovy
+group $group
+version $version
+```
+
 使用时一定要用双引号，不能使用单引号
 > "$version"，不能写成'$version'，否则就不是取的变量，而是字符串$version
 
